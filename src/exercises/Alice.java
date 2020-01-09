@@ -14,7 +14,7 @@ public class Alice {
         String word = input.next();
         input.close();
         String lowerAlice = alice.toLowerCase();
-        String[] splitSentence = lowerAlice.split("\\b+");
+        String[] splitSentence = lowerAlice.split("\\b");
         if (Arrays.asList(splitSentence).contains(word.toLowerCase())) {
             System.out.println("true");
             System.out.println("Word is in index " + lowerAlice.indexOf(word) + " and it is " + word.length() + " characters long");
